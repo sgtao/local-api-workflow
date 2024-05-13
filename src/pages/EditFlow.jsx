@@ -29,6 +29,7 @@ const initialNodes = [
     data: {
       label: 'Start Node',
       name: 'Start Event',
+      type: 'start',
     },
     type: 'eventNode',
     ...nodeDefaults,
@@ -39,6 +40,7 @@ const initialNodes = [
     data: {
       label: 'End Node',
       name: 'End Event',
+      type: 'end',
     },
     type: 'eventNode',
     ...nodeDefaults,
@@ -82,6 +84,7 @@ const EditFlow = () => {
   const onEdgeUpdate = useCallback((oldEdge, newConnection) => {
     edgeUpdateSuccessful.current = true;
     setEdges((els) => updateEdge(oldEdge, newConnection, els));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onEdgeUpdateEnd = useCallback((_, edge) => {
@@ -89,11 +92,13 @@ const EditFlow = () => {
       setEdges((eds) => eds.filter((e) => e.id !== edge.id));
     }
     edgeUpdateSuccessful.current = true;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // 追加：エッジをダブルクリックで削除する処理
   const onEdgeDoubleClick = useCallback((event, edge) => {
     setEdges((eds) => eds.filter((e) => e.id !== edge.id));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // ノードを追加する関数

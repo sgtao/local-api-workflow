@@ -26,9 +26,14 @@ function TextUpdaterNode({ data, isConnectable }) {
         style={targetStyle}
         isConnectable={isConnectable}
       />
-      <div className="updater-input">
+      <div className="updater-title">
         <label htmlFor="text">Title:</label>
-        <input id="text" name="text" onChange={onChange} className="nodrag" />
+        <input
+          id="text"
+          name="text"
+          onChange={onChange}
+          className="updater-input"
+        />
       </div>
       <Handle
         type="source"

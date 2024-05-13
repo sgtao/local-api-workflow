@@ -4,14 +4,14 @@ import './HomePage.css';
 const HomePage = () => {
   return (
     <div className="home-page">
-      <h2>
-        How to use{' '}
+      <h1>local-api-workflow</h1>
+      <p>
+        This is workflow editor using{' '}
         <a href="https://reactflow.dev/" target="_blank">
           React Flow
         </a>
-      </h2>
-      <p>Welcome to Learning Playground!</p>
-      <p>To start, please select a menu from the side menu.</p>
+        .
+      </p>
     </div>
   );
 };

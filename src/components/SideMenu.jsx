@@ -11,21 +11,6 @@ const SideMenu = () => {
       <h3>Contents</h3>
       <ul>
         <li>
-          <Link to="/FirstFlow">First Flow</Link>
-        </li>
-        <li>
-          <Link to="/CoreConcepts">Core Concepts</Link>
-        </li>
-        <li>
-          <Link to="/Figma-like-Control">Figma-like Control</Link>
-        </li>
-        <li>
-          <Link to="/PluginComponents">Plugin Components</Link>
-        </li>
-        <li>
-          <Link to="/StyledFlow">Theming & Styling</Link>
-        </li>
-        <li>
           <Link to="/EditFlow">Edit Flow</Link>
         </li>
         {/* Add more titles */}

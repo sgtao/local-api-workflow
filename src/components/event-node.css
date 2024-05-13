@@ -2,7 +2,7 @@
 .event-paragraph {
   margin-left: 0.25rem; /* ml-1 */
   margin-bottom: 0;
-  font-size: 6px; /* text-[6px] */
+  font-size: 0.5rem;
   font-weight: 700;
   color: #4b5563; /* text-gray-400 */
   background-color: inherit;
@@ -36,6 +36,7 @@
 }
 
 .event-name {
+  font-size: 1rem;
   font-weight: 600; /* font-semibold */
   text-align: center; /* text-center */
 }

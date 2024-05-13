@@ -28,12 +28,17 @@ function EventNode({ data, selected, isConnectable }) {
           // eslint-disable-next-line react/prop-types
           style={{ borderColor: data.color }}
         >
-          <Handle
-            type="target"
-            position={Position.Left}
-            style={targetStyle}
-            isConnectable={isConnectable}
-          />
+          {
+            // eslint-disable-next-line react/prop-types
+            data.type === 'end' && (
+              <Handle
+                type="target"
+                position={Position.Left}
+                style={targetStyle}
+                isConnectable={isConnectable}
+              />
+            )
+          }
           <span
             className="event-name"
             // eslint-disable-next-line react/prop-types
@@ -44,12 +49,17 @@ function EventNode({ data, selected, isConnectable }) {
               data.name
             }
           </span>
-          <Handle
-            type="source"
-            position={Position.Right}
-            style={sourceStyle}
-            isConnectable={isConnectable}
-          />
+          {
+            // eslint-disable-next-line react/prop-types
+            data.type === 'start' && (
+              <Handle
+                type="source"
+                position={Position.Right}
+                style={sourceStyle}
+                isConnectable={isConnectable}
+              />
+            )
+          }
         </div>
       </div>
     </>
