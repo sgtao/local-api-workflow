@@ -1,0 +1,28 @@
+/* updater-node.css */
+.updater-node {
+  height: 100%;
+  border: 1px solid #eee;
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+}
+.updater-input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 10px;
+}
+.updater-node label {
+  display: block;
+  color: #777;
+  margin-right: 0.5em;
+}
+.updater-paragraph {
+  margin-left: 0.25rem; /* ml-1 */
+  font-size: 6px; /* text-[6px] */
+  font-weight: 700;
+  color: #4b5563; /* text-gray-400 */
+  background-color: inherit;
+}
